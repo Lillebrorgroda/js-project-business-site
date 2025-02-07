@@ -35,15 +35,14 @@ article{
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     grid-column: 1 / 5;
     
 }
 
 .card{
     display: flex;
-    /*border: 2px, solid, hotpink;*/
     padding: 10px;
     margin: 10px;
     flex-direction: column;
