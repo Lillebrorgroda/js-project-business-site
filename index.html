@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
   <title>Odlingsglädje och skapelsekärlek</title>
 </head>
 
@@ -22,45 +21,51 @@
   </header>
 
   <div class="about">
-    <h2>Om projektet</h2>
-    <p>Under ett år kommer jag att gå en kurs
-      och här på denna sidan kommer mina reflektioner
-      och det jag dokumenterar att visas. </p>
+    <h2>Odlingsglädje och skapelsekärlek</h2>
+    <p>Under det kommande året kommer jag att delta i en kurs där jag utforskar och lär mig nya saker. På denna sida
+      kommer jag att dela med mig av mina reflektioner, insikter och dokumentation från min resa. Här kan du följa min
+      utveckling, ta del av mina erfarenheter och kanske till och med hitta inspiration själv.</p>
   </div>
+
   <section class="grid-container">
     <article class="main-article">
-      <img src="./assets/marisol-benitez-QvkAQTNj4zk-unsplash.jpg" alt="">
+      <img src="./assets/marisol-benitez-QvkAQTNj4zk-unsplash.jpg" alt="Picture of vegetable">
       <div class="card">
         <h3>Senaste nytt</h3>
-        <p>Nu har jag spenderat första kursdagarna på Helsjön folkhögskola. Kursintroduktion deluxe!
-          Mycket information om vad året kommer att innehålla. Det kommer bli ett bra år med ett fint
-          fokus på odlningsglädje och skapelsekärlek! </p>
-        <p>Kursen har tre perspektiv teologi, miljöpsykologi och odling. Visst blir du lite intresserad! </p>
+        <p>Nu har de första kursdagarna på Helsjön folkhögskola passerat – och vilken start det har varit! En riktig
+          kursintroduktion deluxe, full av inspiration och spännande insikter om vad året kommer att innehålla. Det
+          känns som att det kommer bli ett fantastiskt år, med ett härligt fokus på odlingsglädje och skapelsekärlek.
+        </p>
+        <p>Kursen väver samman tre perspektiv: teologi, miljöpsykologi och odling – en kombination som öppnar upp för
+          både reflektion och praktiskt lärande. Visst låter det spännande? 🌿✨ </p>
         <p> Läs mer på </p>
         <a href="https://helsjon.se/utbildningar/odling-och-teologi/"><button>Helsjön</button></a>
-
-
       </div>
     </article>
-    <article class="tree">
-      <img src="assets/Apple-tree.jpg" alt="">
+
+    <article class="my-tree">
+      <img src="assets/Apple-tree.jpg" alt="Picture of apple tree">
       <div class="card">
         <h3>Mitt träd</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque earum aliquam nemo id? Sequi a aut
-          culpa maxime deserunt ipsum similique labore beatae necessitatibus dolor nulla, rem accusantium. Ratione.</p>
+        <p>Under ett år kommer jag att följa ett träd och dokumentera dess förändringar genom årstidernas växlingar. Jag
+          ska utforska och lära mig så mycket som möjligt om trädet </p>
         <button>Läs mer</button>
       </div>
     </article>
+
     <article>
-      <img src="assets/soil.jpg" alt="">
+      <img src="assets/soil.jpg" alt="Picture of soil">
       <div class="card">
-        <h3>Jord</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi adipisci quo suscipit autem velit
-          accusantium repellat quam laboriosam eaque voluptatem. Nulla beatae cumque inventore ex doloribus nam
-          perferendis fugiat vero?</p>
+        <h3>Jord – Grunden för allt liv</h3>
+        <p>
+          Jord är en blandning av mineraler, organiskt material, vatten och luft som utgör grunden för växters tillväxt.
+          Den finns i olika typer, som sandjord, lerjord och mulljord, och dess näringsinnehåll och struktur påverkar
+          hur väl växter trivs. Jordens ekosystem är levande och fullt av mikroorganismer, maskar och svampar som bryter
+          ner organiskt material och skapar näring för nya växter. 🌱</p>
         <button>Läs mer</button>
       </div>
     </article>
+
     <article>
       <img src="assets/project-front.jpg" alt="">
       <div class="card">
@@ -71,6 +76,7 @@
         <button>Läs mer</button>
       </div>
     </article>
+
     <article>
       <img src="assets/garden-left.jpg" alt="">
       <div class="card">
@@ -81,11 +87,10 @@
         <button>Läs mer</button>
       </div>
     </article>
+
     <article class="newsletter">
-      <img src="assets/kyle-hinkson-qZH4UdTqro0-unsplash.jpg" alt="">
       <div class="card">
         <form action="http://httpbin.org/anything" method="post">
-
           <h3>Vill du följa resan och bli uppdaterad när det finns något nytt?</h3>
           <p>Fyll i fälten nedan</p>
 
@@ -95,7 +100,8 @@
           </div>
 
           <div class="form-input">
-            <label for="last-name">Efternamn:</label>
+            <label for="last-name">Efternamn:
+            </label>
             <input type="text" id="last-name" name="last-name" required>
           </div>
 
@@ -104,11 +110,11 @@
             <input type="email" id="email" name="email" required>
           </div>
 
-          <div class="favorit-vegetable">
-            <p>Välj din favoritgrönsak</p>
-          </div>
+          <!-- Two different ways of writing input and label because one way made it better for styleing the radio buttons to be conected.  -->
 
-          <div class="pick-a-vegetable">
+          <div class="favorite-vegetable">
+            <p>Välj din favoritgrönsak</p>
+
             <label>
               <input type="radio" name="fav-veg" value="CARROT">
               Morot
@@ -123,15 +129,29 @@
               <input type="radio" name="fav-veg" value="BELLPEPPER">
               Paprika
             </label>
+
+            <label>
+              <input type="radio" name="fav-veg" value="CUCUMBER">
+              Gurka
+            </label>
+
+            <label>
+              <input type="radio" name="fav-veg" value="POTATOES">
+              Potatis
+            </label>
+
+            <label>
+              <input type="radio" name="fav-veg" value="ZUCCHINI">
+              Zucchini
+            </label>
           </div>
 
-          <div class="submit-form">
-            <input type="submit" value="Submit">
-          </div>
+          <input type="submit" value="Submit">
 
         </form>
       </div>
     </article>
+
     <article>
       <img src="assets/kyle-hinkson-qZH4UdTqro0-unsplash.jpg" alt="">
       <div class="card">
@@ -142,6 +162,7 @@
         <button>Läs mer</button>
       </div>
     </article>
+
     <article>
       <img src="assets/kyle-hinkson-qZH4UdTqro0-unsplash.jpg" alt="">
       <div class="card">
@@ -154,7 +175,17 @@
     </article>
   </section>
 
-  <footer></footer>
+  <footer>
+    <p>Följ mig på sociala medier</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Modig.Lillebror.Groda/" target="_blank">
+        <img src="./assets/icons8-facebook-logo-100.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/lillebrorgroda/" target="_blank">
+        <img src="./assets/icons8-instagram-old-100.png" alt="Instagram">
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

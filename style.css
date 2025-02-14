@@ -2,8 +2,8 @@ body {
     background-color: #30302C;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    /*To make the page cover all the way out*/
     color: white;
-
 }
 
 .navbar {
@@ -13,6 +13,7 @@ body {
     align-items: center;
     background-color: #667659;
     position: relative;
+    /*Using position relative to make one picture stay to the right */
 }
 
 .navbar img {
@@ -29,6 +30,7 @@ body {
     position: absolute;
     right: 0;
     cursor: pointer;
+    /*Pointing out that this is clickable*/
 }
 
 @keyframes wiggle {
@@ -69,8 +71,10 @@ header {
 
 
 .about {
-    /* display:flex;*/
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .grid-container {
@@ -95,7 +99,7 @@ article img {
     max-width: 300px;
     height: auto;
     border-radius: 25px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2)
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5)
 }
 
 .card {
@@ -116,8 +120,14 @@ button {
     font-family: 'Courier New', Courier, monospace;
     border-radius: 4px;
     padding: 4px;
-    box-shadow: 0, 4px, 8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    /*Pointing out that this is clickable*/
+    font-size: 14px;
+}
+
+button:hover {
+    box-shadow: none;
 }
 
 form {
@@ -130,7 +140,6 @@ form {
     flex-direction: column;
     padding: 5px;
     gap: 10px;
-
 }
 
 input {
@@ -139,41 +148,66 @@ input {
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
+    /*Pointing out that this is clickable*/
 }
 
 label {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    /* Mellanrum mellan knapp och text */
 
 }
 
-
-.favorit-vegetable {
-    text-align: center;
-}
-
-.pick-a-vegetable {
-    padding: 15px;
+.favorite-vegetable {
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 input[type="radio"] {
     accent-color: #30302C;
-}
-
-.submit-form {
-    align-self: center;
-    cursor: pointer;
+    padding: 15px;
 }
 
 input[type="submit"] {
     background-color: white;
     font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 4px;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    align-self: center;
+}
+
+input[type="submit"]:hover {
+    box-shadow: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #667659;
+    gap: 10px;
+}
+
+
+footer img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 600px) {
     .navbar {
+        display: none;
+    }
+
+    footer p {
         display: none;
     }
 }
@@ -198,14 +232,12 @@ input[type="submit"] {
     article {
         grid-column: span 3;
         justify-content: flex-start;
-
     }
 
     .main-article {
         grid-column: span 6;
         flex-direction: row;
         align-items: center;
-
     }
 
     .newsletter {
@@ -213,7 +245,7 @@ input[type="submit"] {
         grid-row: 1;
     }
 
-    .tree {
+    .my-tree {
         grid-column: 10 / 13;
         grid-row: 1;
     }
