@@ -69,6 +69,12 @@ header {
     text-align: center;
 }
 
+.nav-links {
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+
+}
 
 .about {
     text-align: center;
@@ -203,7 +209,7 @@ footer img:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .navbar {
+    .nav-links {
         display: none;
     }
 
@@ -213,6 +219,10 @@ footer img:hover {
 }
 
 @media (min-width: 600px) and (max-width: 1280px) {
+    .last-image {
+        display: none;
+    }
+
     .grid-container {
         grid-template-columns: repeat(8, 1fr);
 
@@ -225,6 +235,10 @@ footer img:hover {
 }
 
 @media (min-width: 1281px) {
+    .last-image {
+        display: none;
+    }
+
     .grid-container {
         grid-template-columns: repeat(12, 1fr);
     }
