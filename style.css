@@ -80,6 +80,8 @@ header {
 .nav-links.active {
     display: flex;
     flex-direction: column;
+    align-items: end;
+    font-size: 25px;
 }
 
 
