@@ -76,6 +76,13 @@ header {
 
 }
 
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .about {
     text-align: center;
     max-width: 800px;
@@ -219,7 +226,7 @@ footer img:hover {
 }
 
 @media (min-width: 600px) and (max-width: 1280px) {
-    .last-image {
+    .menu-icon {
         display: none;
     }
 
@@ -232,11 +239,25 @@ footer img:hover {
         grid-column: span 4;
         justify-content: flex-start;
     }
+
+    .nav-links {
+        padding: 30px;
+        text-align: center;
+        font-size: 18px;
+
+    }
 }
 
 @media (min-width: 1281px) {
-    .last-image {
+    .menu-icon {
         display: none;
+    }
+
+    .nav-links {
+        padding: 30px;
+        text-align: center;
+        font-size: 18px;
+
     }
 
     .grid-container {
