@@ -162,12 +162,14 @@ input {
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
     /*Pointing out that this is clickable*/
 }
 
 input:focus {
     border: 3px solid #8D5A97;
     outline: none;
+    box-shadow: 0 0 10px rgba(232, 23, 117, 0.56)
 }
 
 label {
